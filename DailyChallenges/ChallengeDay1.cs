@@ -4,7 +4,7 @@
     {
         public string ReverseString(string input)
         {
-            throw new NotImplementedException();
+            return string.Join("", input.ToCharArray().Reverse());
         }
     }
 }
