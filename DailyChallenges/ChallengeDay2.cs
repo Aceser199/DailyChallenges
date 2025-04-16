@@ -9,7 +9,9 @@
 
         public int[] MergedSortedArray(int[] firstArray, int[] secondArray)
         {
-            throw new NotImplementedException();
+            int[] mergedArray = firstArray.Concat(secondArray).ToArray();
+            Array.Sort(mergedArray);
+            return mergedArray;
         }
     }
 }
